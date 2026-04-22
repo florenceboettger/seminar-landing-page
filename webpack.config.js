@@ -67,7 +67,18 @@ module.exports = {
             {
                 test: /\.(json)$/,
                 type: 'asset/source',
+                type: 'json',
                 generator: { filename: 'dat/[name]_[hash:4][ext]' }
+            },
+            {
+                test: /\.ya?ml$/,
+                type: 'asset/source',
+                type: 'json',
+                generator: { filename: 'dat/[name]_[hash:4][ext]' },
+                use: {
+                    loader: 'yaml-loader',
+                    options: { asJSON: true },
+                }
             },
         ]
     }
