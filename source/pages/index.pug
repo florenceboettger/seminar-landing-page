@@ -14,9 +14,9 @@ mixin project(name, link, image, contributors)
                     | #[=name]
                 p.card-text
                     if contributors.length > 1
-                        | contributors:&nbsp;
+                        | Contributors:&nbsp;
                     else
-                        | Student:&nbsp;
+                        | Contributor:&nbsp;
                     each c, i in contributors 
                         | #[+gh-link(c)]
                         if i < contributors.length - 1
@@ -39,17 +39,17 @@ html
         section#header.container
             .row.text-left 
                 .col-12.offset-0
-                    h2.mb-1 Introduction
+                    h2.mb-1 Header
                     p
-                        | Three.js is a widely used 3D rendering engine for web browsers with hardware accelerated rendering capabilities based on WebGL and the upcoming WebGPU APIs.
-                        | The feature set of Three.js is broad and comprehensive to allow for quick prototyping, cool demos, and 3D applications.
-                        | However, some computer graphics features in niche gaps are missing.
-                    h2.mt-2.mb-1 Scope and Context
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        | Nulla urna velit, pellentesque eget tempus nec, faucibus ac dui.
+                        | Aliquam auctor. 
+                    h2.mt-2.mb-1 Header
                     p
-                        | We at the research group for #[a(href="https://hpi.de/doellner/home.html") Computer Graphics Systems], chaired by Prof. Dr. Jürgen Döllner, identified a couple of such missing features and designed a project seminar to fill these gaps.
-                        | As such, we conducted the seminar "3D Computer Graphics: Extending the Three.js Framework" with seven Bachelor's contributors in the winter semester 2023/24 at Hasso Plattner Institute, Digital Engineering Faculty, University of Potsdam.
-                        | The instructors and supervisors for the projects were Willy Scheibel (#[+gh-link({name: "scheibel", username: "scheibel"})]) and Ole Wegen.
-                        | The results were as follows.
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        | Vivamus imperdiet eget mi sed cursus.
+                        | Proin felis nulla, egestas id tellus non, hendrerit pretium libero.
+                        | Donec sit amet orci. 
             h1.mt-4.mb-1 Projects
             .row
                 each p in projects

@@ -1,7 +1,7 @@
 {
-    "name": "threejs-seminar",
+    "name": "cgs-seminar-landing-page",
     "version": "1.0.0",
-    "homepage": "https://hpicgs.github.io/seminar-extending-threejs-2023/",
+    "homepage": "https://github.com/florenceboettger/seminar-landing-page",
     "devDependencies": {
         "bootstrap": "^4.6.2",
         "css-loader": "^6.10.0",
